@@ -1,15 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wpisz nazwę swojej klasy");
+        String name = scanner.nextLine();
+        System.out.println("Podaj poziom klasy (np. 2, bo 2BT)");
+        int level = scanner.nextInt();
+        System.out.println("Witaj " + name + ". Za " + (5 - level) + " lata będę pisał maturę !");
+        System.out.println("Po szkole pójde na studia");
     }
 }
